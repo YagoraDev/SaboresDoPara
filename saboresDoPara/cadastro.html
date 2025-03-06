@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/conta.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Sabores do Pará</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <div class="cabecalho__logo">
+                <img src="assents/pará.jpg" alt="Bandeira do pará">
+                <a href="">Sabores do Pará</a>
+            </div>
+            <div class="cabecalho__links">
+                <a href="index.html">Início</a>
+                <a href="loja.html">Loja</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">Conta</button>
+                    <div class="dropdown-content">
+                        <a href="login.html">Entrar</a>
+                        <a href="cadastro.html">Criar conta</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form action="" method="post">
+            <h1>Criar conta:</h1>
+    
+            <label for="nome">Nome:</label>
+            <input type="text" required name="email" placeholder="Digite o seu nome"/>
+
+            <label for="nome">Email:</label>
+            <input type="email" required name="email" placeholder="Digite o seu Email"/>
+    
+            <label for="nome">Senha:</label>
+            <input type="password" required name="senha" placeholder="Digite a sua senha"/>
+
+            <label for="nome">Confirmação da senha:</label>
+            <input type="password" required name="senha" placeholder="Digite a sua senha"/>
+    
+            <a class="link_login" href="login.html">Já tenho conta!</a>
+
+            <div class="botao">
+                <button type="submit">Enviar</button>
+            </div>
+            </form>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por mim</p>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
