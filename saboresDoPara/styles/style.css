@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica;
+}
+
+.cabecalho {
+    padding: 1% 15%;
+    background-color: #263cbb;
+    font-family: Helvetica;
+}
+
+.cabecalho__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+}
+
+.cabecalho__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecalho__logo img {
+    width: 60px;
+    height: auto;
+    border-radius: 2px;
+}
+
+.cabecalho__links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cabecalho__links a {
+    text-decoration: none;
+    color: #f6f6f6;
+    background-color: #263cbb;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease
+}
+
+.cabecalho__links a:hover {
+    background-color: #f6f6f6;
+    color: #C60C30;
+}
+
+.cabecalho__logo a {
+    text-decoration: none;
+    color: #f6f6f6;
+    background-color: (183, 77, 77);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.dropdown button {
+    background-color: #263cbb;
+    color: #f6f6f6;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #f6f6f6;
+    color: #C60C30;
+    padding: 10px 15px; 
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease
+}
+
+.dropbtn:hover {
+    background-color: #f6f6f6;;
+    color: #C60C30;
+}
+
+/* Estilizando o Menu Suspenso */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 120px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+    padding: 0;
+    overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease
+}
+
+.dropdown-content a {
+    color: #f6f6f6;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    border-radius: 0;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+.fundo {
+    width: 100%;
+    height: 450px;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8% 15%;
+}
+
+.introducao h1,
+h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+}
+
+.container_loja {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.comidasTipicas {
+    display: flex;
+    flex-direction: column;
+    padding: 8% 0%;
+}
+
+.comidasTipicas h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+}
+
+.ladoEsquerdo {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.ladoDireito {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-size: 20px;
+    flex-direction: row-reverse;
+    justify-content: end;
+    margin-top: 50px;
+}
+
+.textoImg {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.comidaImg {
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product {
+    flex: 0 0 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 200px;
+    height: 300px; 
+    margin-right: 2px; 
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; 
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.compra {
+    width: 100%;
+    background-color: #263cbb;
+    color: white;
+    padding: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.compra:hover {
+    background-color: rgb(50, 179, 50);
+}
+
+.rodape {
+    padding: 24px;
+    text-align: center;
+    color: white;
+    background-color: #263cbb;
+    font-size: 24px;
+    font-weight: 400;
+}

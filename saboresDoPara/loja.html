@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Sabores do Pará</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <div class="cabecalho__logo">
+                <img src="assents/pará.jpg" alt="Bandeira do pará">
+                <a href="">Sabores do Pará</a>
+            </div>
+            <div class="cabecalho__links">
+                <a href="index.html">Início</a>
+                <a href="loja.html">Loja</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">Conta</button>
+                    <div class="dropdown-content">
+                        <a href="login.html">Entrar</a>
+                        <a href="cadastro.html">Criar conta</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container"> 
+        <h2 class="container_loja">Pratos Típicos</h2>
+        <div class="carousel" id="carousel1">
+            <button class="prev" onclick="moveSlide(-1, 'carousel1')">&#10094;</button>
+            <div class="carousel-track" id="carousel">
+                <div class="product"><h3>Pato no Tucupi</h3><img src="assents/pato-no-tucupi-2.jpg"><p><strong>R$ 29,90</strong></p><button class="compra">Comprar</button></div>
+                <div class="product"><h3>Maniçoba</h3><img src="assents/maniçoba.jpg"><p><strong>R$ 24,90</strong></p><button class="compra">Comprar</button></div>
+                <div class="product"><h3>Arroz Paraense</h3><img src="assents/arroz paraense .jpg"><p><strong>R$ 24,90</strong></p><button class="compra">Comprar</button></div>
+                <div class="product"><h3>Arroz Paraense</h3><img src="assents/arroz paraense .jpg"><p><strong>R$ 24,90</strong></p><button class="compra">Comprar</button></div>
+                <div class="product"><h3>Pato no Tucupi</h3><img src="assents/pato-no-tucupi-2.jpg"><p><strong>R$ 29,90</strong></p><button class="compra">Comprar</button></div>
+                <div class="product"><h3>Maniçoba</h3><img src="assents/maniçoba.jpg"><p><strong>R$ 24,90</strong></p><button class="compra">Comprar</button></div>
+            </div>
+            <button class="next" onclick="moveSlide(1, 'carousel1')">&#10095;</button>
+        </div>
+
+        <h2 class="container_loja">Mais vendidos</h2>
+        <div class="carousel" id="carousel2">
+            <button class="prev" onclick="moveSlide(-1, 'carousel2')">&#10094;</button>
+            <div class="carousel-track" id="carousel">
+                <div class="product"><h3>Maniçoba</h3><img src="assents/maniçoba.jpg"><p><strong>R$ 29,90</strong></p><button class="compra">Comprar</button></div>
+                <div class="product"><h3>Pato no Tucupi</h3><img src="assents/pato-no-tucupi-2.jpg"><p><strong>R$ 24,90</strong></p><button class="compra">Comprar</button></div>
+                <div class="product"><h3>Arroz Paraense</h3><img src="assents/arroz paraense .jpg"><p><strong>R$ 24,90</strong></p><button class="compra">Comprar</button></div>
+                <div class="product"><h3>Açai</h3><img src="assents/açai.jpg"><p><strong>R$ 19,90</strong></p><button class="compra">Comprar</button></div>
+                <div class="product"><h3>Açai 500ml</h3><img src="assents/açai.jpg"><p><strong>R$ 9,90</strong></p><button class="compra">Comprar</button></div>
+                <div class="product"><h3>Açai 500ml</h3><img src="assents/açai.jpg"><p><strong>R$ 9,90</strong></p><button class="compra">Comprar</button></div>
+            </div>
+            <button class="next" onclick="moveSlide(1, 'carousel2')">&#10095;</button>
+        </div>
+
+        <h2 class="container_loja">Sobremesa</h2>
+        <div class="carousel" id="carousel3">
+            <button class="prev" onclick="moveSlide(-1, 'carousel3')">&#10094;</button>
+            <div class="carousel-track" id="carousel">
+                <div class="product"><h3>Bolo de Macaxeira</h3><img src="assents/bolo-de-macaxeira.jpg"><p><strong>R$ 19,90</strong></p><button class="compra">Comprar</button></div>
+                <div class="product"><h3>Bolo de Macaxeira</h3><img src="assents/bolo-de-macaxeira.jpg"><p><strong>R$ 19,90</strong></p><button class="compra">Comprar</button></div>
+                <div class="product"><h3>Bolo de Macaxeira</h3><img src="assents/bolo-de-macaxeira.jpg"><p><strong>R$ 19,90</strong></p><button class="compra">Comprar</button></div>
+                <div class="product"><h3>Açai 500ml</h3><img src="assents/açai.jpg"><p><strong>R$ 9,90</strong></p><button class="compra">Comprar</button></div>
+                <div class="product"><h3>Açai 500ml</h3><img src="assents/açai.jpg"><p><strong>R$ 9,90</strong></p><button class="compra">Comprar</button></div>
+                <div class="product"><h3>Açai 500ml</h3><img src="assents/açai.jpg"><p><strong>R$ 9,90</strong></p><button class="compra">Comprar</button></div>
+            </div>
+            <button class="next" onclick="moveSlide(1, 'carousel3')">&#10095;</button>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por mim</p>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
